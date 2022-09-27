@@ -1,0 +1,164 @@
+body {
+  background-color: #282828;
+  color: #ccc;
+  font-family: 'Tahoma', sans-serif;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#yt-query--wrapper {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#yt-query {
+  background-color: #000;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+#results {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 40px;
+}
+
+#result-count {
+  width: fit-content;
+  margin: 10px auto;
+}
+
+#expand-options-btn {
+  background-color: #1f1f1f;
+  color: #aaa;
+  padding: 0 40px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#expand-options-btn:hover {
+  background-color: #282828;
+}
+
+#options {
+  display: none;
+  margin: auto;
+  width: fit-content;
+  padding-top: 40px;
+}
+
+#options input {
+  background-color: #1f1f1f;
+  border: 1px solid #888;
+  color: #ccc;
+  padding: 4px 10px;
+}
+
+.option-input {
+  position: relative;
+  background-color: #1f1f1f;
+  padding: 12px;
+  padding-top: 18px;
+}
+
+.option-input__label {
+  position: absolute;
+  font-size: 8px;
+  background-color: #1f1f1f;
+  padding: 0 8px;
+  top: 8px;
+  left: 12px;
+  border: 1px solid #888;
+  border-bottom: none;
+}
+
+.video  {
+  display: flex;
+  gap: 40px;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #222;
+  background-color: #242424;
+}
+
+.video .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: cadetblue
+}
+
+.video .desc {
+  color: #aaa;
+}
+
+.video:hover {
+  background-color: #333;
+}
+
+.favs, .comments {
+  display: none;
+}
+
+.video:hover .favs, .video:hover .comments {
+  display: block;
+}
+
+.video .info  {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.video .info .info-footer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.video .info .info-footer .published-at {
+  background-color: #1f1f1f;
+  padding: 4px 10px;
+  border-radius: 10px;
+  color: #777;
+  font-size: 12px;
+}
+
+.published-at-date {
+  display: none;
+  color: crimson;
+  margin-left: 10px;
+}
+
+.published-at:hover .published-at-date {
+  display: inline-block;
+}
+
+.channel a {
+  color: #888;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.channel a:hover {
+  text-decoration: underline;
+}

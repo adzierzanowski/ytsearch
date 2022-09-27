@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>YT Search</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="content">
+      <h1>YT Search</h1>
+      <div id="yt-query--wrapper">
+        <input type="text" id="yt-query" placeholder="Search">
+        <button id="expand-options-btn">&fpartint;ilters</button>
+      </div>
+    </div>
+
+    <div id="options">
+      <div class="option-input">
+        <input type="text" id="min-duration">
+        <div class="option-input__label">Min duration [min.]</div>
+      </div>
+      <div class="option-input">
+        <input type="text" id="page-count">
+        <div class="option-input__label">Page count</div>
+      </div>
+      <div class="option-input">
+        <input type="date" id="published-before" placeholder="Published before">
+        <div class="option-input__label">Published before</div>
+      </div>
+      <div class="option-input">
+        <input type="date" id="published-after" placeholder="Published after">
+        <div class="option-input__label">Published after</div>
+
+      </div>
+    </div>
+
+    <div id="result-count"></div>
+    <div id="results"></div>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
