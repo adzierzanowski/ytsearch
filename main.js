@@ -156,17 +156,15 @@ class VideoRepository {
     params.set('safeSearch', 'none');
 
     const publishedBefore = document.getElementById('published-before').value;
-    const publishedAfter = document.getElementById('published-before').value;
+    const publishedAfter = document.getElementById('published-after').value;
 
     if (publishedBefore !== '') {
       params.set('publishedBefore', new Date(publishedBefore).toISOString());
     }
 
-    /*
     if (publishedAfter !== '') {
-      params.set('publishedAfter', publishedAfter + 'Z');
+      params.set('publishedAfter', new Date(publishedAfter).toISOString());
     }
-    */
 
     const minDuration = parseInt(document.getElementById('min-duration').value);
 
